@@ -22,7 +22,10 @@ Unplanned engine failure is costly and unsafe. Predicting how many cycles an eng
 | XGBoost | 20.11 | 19.15 | 1844.6 |
 | **LSTM (mean of 5 seeds)** | **15.02 ± 0.18** | **13.91 ± 0.23** | **~393** |
 | LSTM ensemble (5 seeds) | 14.87 | 13.74 | 381.7 |
-   ![XGBoost vs LSTM: predicted vs actual RUL](xgb_vs_lstm.png)
+
+![XGBoost vs LSTM: predicted vs actual RUL](xgb_vs_lstm.png)
+
+The LSTM reduces RMSE by about 25% and the NASA score by about 79% compared to XGBoost, with the largest gains near failure (RUL below about 35 cycles), where maintenance decisions matter most.
 The LSTM reduces RMSE by about 25% and the NASA score by about 79% compared to XGBoost, with the largest gains near failure (RUL below about 35 cycles), where maintenance decisions matter most.
 
 ## Limitations
